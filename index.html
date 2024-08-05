@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trends.ajio</title>
+    <link rel="icon" href="data:image/png;base64,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">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <nav class="navbar bg-body-white ">
+        <div class="container">
+          <a class="navbar-brand" href="https://www.ajio.com/">
+            <img src="https://assets.ajio.com/static/img/Ajio-Logo.svg" alt="Bootstrap" width="140" height="44">
+          </a>
+          <div class="sign" style="width: 450px; ">
+          <div class="sign1" >
+            <ul style="display: flex; justify-content: space-between;align-items: center;text-align: center; list-style: none; font-size: small;color: black;"> 
+                <li><a href="https://www.ajio.com/selfcare">Sign In / Join Ajio</a></li>
+                <li><a href="#">Customer Care</a></li>
+                <li><button style="background-color: rgb(57, 63, 69);"><a href="https://www.ajio.com/" style=" color: white;">Visit AJIO</a></button></li>
+                <li><button style="background-color: black;color: white;"><a href="https://www.ajio.com/" style="color: white;">Visit AJIOLUXE</a></button></li>
+            </ul>
+          </div>
+          <div class="sign2">
+            <ul  style="display: flex; justify-content: space-between;align-items: center;text-align: center;list-style: none;font-size: small;">
+                <li>
+                   <button style="text-align: center; border:none;background-color: black;color: white;width: 280px;align-items: center;border-radius: 20px;"><b>TRENDS</b> &nbsp;&nbsp;&nbsp;&nbsp;<input type="text"  placeholder="Search Trends Store">&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-magnifying-glass"></i></button>
+                </li>
+                <li>
+                  <div class="btngroup">
+                  <button type="button"  aria-expanded="false" style="background-color: black;color: white; border-radius: 100px; height: 30px; width: 30px;">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+                <ul class="dropdown-menu ">
+                  <li><button class="n1" type="button" style="height: 35px;width: 150px;">Sign In</button></li>
+                  <p>To add or view item(s) part of your wishlist</p>
+              </div>
+                <li><div class="btngroup">
+                  <button type="button"  aria-expanded="false" style="background-color: black;color: white; border-radius: 100px; height: 30px; width: 30px;">
+                    <i class="fa-solid fa-suitcase" style="color: white;"></i>
+                </button>
+                <ul class="dropdown-menu ">
+                  <li><h6 >Your Bag Is Empty
+                    Start Filling It Up!</h6></li>
+                    <hr>
+                    <p class="fw-light" style="font-size: 70%;padding-top: 0;color: rgb(73, 95, 95);">Free Shipping & Returns | 100% Handpicked | Assured Quality</p>
+              </div>
+            </ul>
+          </div>
+        </div>
+        </div>
+      </nav>
+
+      <div class="list">
+      <div class="img">
+        <img src="https://assets.ajio.com/medias/sys_master/root/hc6/h29/12023098966046/trends-logo.png" alt="Img"height="25px"width="120px">
+      </div>
+        <div class="list1" style="line-height: 10px;font-size: 13px;">
+          <ul>
+            <li>MEN</li>
+            <li>WOMEN</li>
+            <li>KIDS</li>
+            <li>BRANDS</li>
+            <li>OFFERS</li>
+          </ul>
+
+        </div>
+      </nav>
+    </div> 
+
+      <div class="center">
+        <img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-fallwinter24strip.jpg" alt="imgs" width="100%">
+        <img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-DNMX.jpg" alt="imgs" width="100%">
+        <img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-newseasonnewtrends-header.jpg" alt="imgs" width="100%">
+        
+
+  
+        <div class="s1">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" >
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 4"></button>       
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active"data-bs-interval="2800">
+              <img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-newseasonnewtrends-shadesofearth.jpg" class="d-block w-100" alt="img">
+            </div>
+            <div class="carousel-item" data-bs-interval="2800">
+              <img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-newseasonnewtrends-autumn24.jpg" class="d-block w-100" alt="img">
+            </div>
+            <div class="carousel-item" data-bs-interval="2800">
+              <img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-newseasonnewtrends-timelessclassics.jpg" class="d-block w-100" alt="img">
+            </div>
+            <div class="carousel-item"data-bs-interval="2800">
+              <img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-newseasonnewtrends-vibranthues.jpg" class="d-block w-100" alt="img">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+        <img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-TopTrendsToTry-Header.jpg" alt="imgs" width="100%">
+
+        <div class="s2">
+        <div id="carouselExampleIndicator" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicator" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicator" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicator" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicator" data-bs-slide-to="2" aria-label="Slide 4"></button>       
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2800">
+              <img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-TopTrendsToTry-comfyfashionmen.jpg" class="d-block w-100" alt="img">
+            </div>
+            <div class="carousel-item" data-bs-interval="2800">
+              <img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-TopTrendsToTry-fusionchic.jpg" class="d-block w-100" alt="img">
+            </div>
+            <div class="carousel-item" data-bs-interval="2800">
+              <img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-TopTrendsToTry-utilityvogue.jpg" class="d-block w-100" alt="img">
+            </div>
+            <div class="carousel-item" data-bs-interval="2800">
+              <img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-TopTrendsToTry-kidswear-starting149.jpg" class="d-block w-100" alt="img">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicator" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicator" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+        <img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-trendsetterbrands-Header.jpg" alt="imgs" width="100%">
+
+
+        
+          <div class="row row-cols-1 row-cols-sm row-cols-md-4 "  style="width: 100%; margin: 0;padding: 0;">
+            
+           <div class="col" style="margin: 0;padding: 0;"><img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-trendsetterbrands-avaasa-starting299.jpg" alt="" style="padding: 0; width: 380px;" ></div>
+            <div class="col" style="margin: 0;padding: 0;"><img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-trendsetterbrands-netplay-starting399.jpg" alt="" style="padding: 0; width: 380px;"></div>
+            <div class="col" style="margin: 0;padding: 0;"><img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-trendsetterbrands-dnmx-starting399.jpg" alt="" style="padding: 0; width: 380px;"></div>
+            <div class="col" style="margin: 0;padding: 0;"><img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-trendsetterbrands-johnplayers-starting599.jpg" alt="" style="padding: 0;width: 380px;"></div>
+            <div class="col" style="margin: 0;padding: 0;"><img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-trendsetterbrands-leecooper-starting399.jpg" alt="" style="padding: 0;width: 380px;"></div>
+            <div class="col" style="margin: 0;padding: 0;"><img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-trendsetterbrands-teamspirit-starting499.jpg" alt="" style="padding: 0;width: 380px;"></div>
+            <div class="col" style="margin: 0;padding: 0;"><img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-trendsetterbrands-fig-starting399.jpg" alt="" style="padding: 0;width: 380px;"></div>
+            <div class="col" style="margin: 0;padding: 0;"><img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-trendsetterbrands-rio-starting199.jpg" alt="" style="padding: 0;width: 380px;"></div>
+            <div class="col" style="margin: 0;padding: 0;"><img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-trendsetterbrands-fusion-starting499.jpg" alt="" style="padding: 0;width: 380px;"></div>
+            <div class="col" style="margin: 0;padding: 0;"><img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-trendsetterbrands-performax-starting299.jpg" alt="" style="padding: 0;width: 380px;"></div>
+            <div class="col" style="margin: 0;padding: 0;"><img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-trendsetterbrands-frndz-starting299.jpg" alt="" style="padding: 0;width: 380px;"></div>
+            <div class="col" style="margin: 0;padding: 0;"><img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-trendsetterbrands-riogirl-starting199.jpg" alt="" style="padding: 0;width: 380px;"></div>
+            <div class="col" style="margin: 0;padding: 0;"><img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-trendsetterbrands-dnmx-starting299.jpg" alt="" style="padding: 0;width: 380px;"></div>
+            <div class="col" style="margin: 0;padding: 0;"><img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-trendsetterbrands-siyahi-starting499.jpg" alt="" style="padding: 0;width: 380px;"></div>
+            <div class="col" style="margin: 0;padding: 0;"><img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-trendsetterbrands-pointcove-starting299.jpg" alt="" style="padding: 0;width: 380px;"></div>
+            <div class="col" style="margin: 0;padding: 0;"><img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-trendsetterbrands-revverse-starting699.jpg" alt="" style="padding: 0;width: 380px;"></div>
+            
+
+          </div>
+
+          <img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-newin-header.jpg" alt="imgs" width="100%">
+           
+          <div >
+          <div id="carouselExampleCaptions" class="carousel slide" style="width: 75%;margin-left: 200px;">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active text-center">
+                
+                  <div class="row" >
+                    <div class="col">
+                    <img src="https://assets.ajio.com/medias/sys_master/root/20240730/HLp1/66a8ed496f60443f31d937a6/-174Wx218H-443041817-offwhite-MODEL.jpg" alt="Img" style="width: 200px;">  
+                    <h6 style="color:rgb(152, 128, 67);font-weight: 600;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">AVAASA MIX N' MATCH</h6>
+                    <P style="line-height: 5px;">Women Floral Print Kalidaar...</P>
+                    <h6>₹1299</h6>
+                   </div>
+                   <div class="col">
+                    <img src="https://assets.ajio.com/medias/sys_master/root/20240618/adNJ/6671979d6f60443f314dadb6/-174Wx218H-443047942-navy-MODEL.jpg" alt="Img" style="width: 200px;">  
+                    <h6 style="color:rgb(152, 128, 67);font-weight: 600;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">LEE COOPER</h6>
+                    <P style="line-height: 5px;">Women Lightly Washed Flar...</P>
+                    <h6>₹1699</h6>
+                   </div>
+                   <div class="col">
+                    <img src="https://assets.ajio.com/medias/sys_master/root/20240524/N2mu/6650c82e16fd2c6e6a257a95/-174Wx218H-443037635-indigo-MODEL.jpg" alt="Img" style="width: 200px;">  
+                    <h6 style="color:rgb(152, 128, 67);font-weight: 600;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">JOHN PLAYERS JEANS</h6>
+                    <P style="line-height: 5px;">Men Lightly Washed Skinny...</P>
+                    <h6>₹1999</h6>
+                   </div>
+                   <div class="col">
+                    <img src="https://assets.ajio.com/medias/sys_master/root/20240503/5g7d/6634f50f16fd2c6e6ae579e6/-174Wx218H-443034282-blue-MODEL.jpg" alt="Img" style="width: 200px;">  
+                    <h6 style="color:rgb(152, 128, 67);font-weight: 600;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">KG FRENDZ</h6>
+                    <P style="line-height: 5px;">Girls Ombre - Dyed Tiered D...</P>
+                    <h6>₹699</h6>
+                   </div>
+                   
+
+                     </div> 
+                 
+              </div>
+             
+              <div class="carousel-item">
+                <div class="container text-center">
+                  <div class="row">
+                    <div class="col">
+                      <img src="https://assets.ajio.com/medias/sys_master/root/20240520/f399/664afdfc05ac7d77bb667d98/-174Wx218H-443033079-blue-MODEL.jpg"  alt="Img" style="width: 200px;">
+                      <h6 style="color:rgb(152, 128, 67);font-weight: 600;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">AVAASA MIX N' MATCH</h6>
+                    <P style="line-height: 5px;">Women Printed Anarkali Kur...</P>
+                    <h6>₹1499</h6>
+                    </div>
+                    <div class="col">
+                      <img src="https://assets.ajio.com/medias/sys_master/root/20240603/U9x6/665dd5e616fd2c6e6a4777c0/-174Wx218H-443044448-offwhite-MODEL.jpg"  alt="Img" style="width: 200px;">
+                      <h6 style="color:rgb(152, 128, 67);font-weight: 600;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">RIO</h6>
+                    <P style="line-height: 5px;">Women Regular Fit Crop De...</P>
+                    <h6>₹1299</h6>
+                    </div>
+                    <div class="col">
+                      <img src="https://assets.ajio.com/medias/sys_master/root/20240603/ht2O/665dc7b416fd2c6e6a47236a/-174Wx218H-443037602-darkgrey-MODEL.jpg"  alt="Img" style="width: 200px;">
+                      <h6 style="color:rgb(152, 128, 67);font-weight: 600;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">JOHN PLAYERS JEANS</h6>
+                    <P style="line-height: 5px;">Men Lightly Washed Straigh...</P>
+                    <h6>₹2799</h6>
+                    </div>
+                    <div class="col">
+                      <img src="https://assets.ajio.com/medias/sys_master/root/20240528/rsCb/6655d7c605ac7d77bb84c479/-174Wx218H-443045599-white-MODEL.jpg"  alt="Img" style="width: 200px;">
+                      <h6 style="color:rgb(152, 128, 67);font-weight: 600;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">KG FRENDZ</h6>
+                    <P style="line-height: 5px;">Girls Floral Print Fit & Flare...</P>
+                    <h6>₹899</h6>
+                    </div>
+                  </div>                
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container text-center">
+                <div class="row">
+                  <div class="col">
+                    <img src="https://assets.ajio.com/medias/sys_master/root/20240617/f4l3/666fe61c1d763220fac4141b/-174Wx218H-443047406-navy-MODEL.jpg"  alt="Img" style="width: 200px;">
+                    <h6 style="color:rgb(152, 128, 67);font-weight: 600;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">SIYAHI</h6>
+                  <P style="line-height: 5px;">Welcome Chevron Print Strai...</P>
+                  <h6>₹499</h6>
+                  </div>
+                  <div class="col">
+                    <img src="https://assets.ajio.com/medias/sys_master/root/20240528/mnTK/6655898116fd2c6e6a2f665c/-174Wx218H-443043649-beige-MODEL.jpg"  alt="Img" style="width: 200px;">
+                    <h6 style="color:rgb(152, 128, 67);font-weight: 600;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">RIO</h6>
+                  <P style="line-height: 5px;">Women Regular Fit High-Ne...</P>
+                  <h6>₹1299</h6>
+                  </div>
+                  <div class="col">
+                    <img src="https://assets.ajio.com/medias/sys_master/root/20240522/i22g/664dbc9d05ac7d77bb6e37cf/-174Wx218H-443037615-olive-MODEL.jpg"  alt="Img" style="width: 200px;">
+                    <h6 style="color:rgb(152, 128, 67);font-weight: 600;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">JOHN PLAYERS JEANS</h6>
+                  <P style="line-height: 5px;">Men Heavely Washed Straigh...</P>
+                  <h6>₹2499</h6>
+                  </div>
+                  <div class="col">
+                    <img src="https://assets.ajio.com/medias/sys_master/root/20240430/HTGS/663102c705ac7d77bb349a36/-174Wx218H-442601811-navy-MODEL.jpg"  alt="Img" style="width: 200px;">
+                    <h6 style="color:rgb(152, 128, 67);font-weight: 600;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">POINT COVE</h6>
+                  <P style="line-height: 5px;">Boys Graphic Print Slim Fit...</P>
+                  <h6>₹299</h6>
+                  </div>
+                </div>                
+            </div>
+          </div>
+
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+          <img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-editorspicks-header.jpg" alt="" width="100%">
+          
+
+            <div class="row row-cols-1 row-cols-sm row-cols-md-3 "  style="width: 100%; margin: 0;padding: 0;"> 
+            <div class="col" style="margin: 0;padding: 0;"><img src="https://assets.ajio.com/cms/TRENDS/WEB/d-19072024-TrendsSIS-editorspicks-tieredelegance.jpg" alt="" style="padding: 0; width: 506px;" ></div>
+            <div class="col" style="margin: 0;padding: 0;"><img src="https://assets.ajio.com/cms/TRENDS/WEB/d-19072024-TrendsSIS-editorspicks-mencargos.jpg" alt="" style="padding: 0; width: 506px;" ></div>
+            <div class="col" style="margin: 0;padding: 0;"><img src="https://assets.ajio.com/cms/TRENDS/WEB/d-19072024-TrendsSIS-editorspicks-womenlayers.jpg" alt="" style="padding: 0; width: 506px;" ></div>
+            </div> 
+             
+             <img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-BagTheClosetBasics-header.jpg" alt="" width="100%">
+             
+             
+             <div class="row row-cols-1 row-cols-sm row-cols-md-3 "  style="width: 100%; margin: 0;padding: 0;">
+             <div class="col" style="margin: 0;padding: 0;"><img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-BagTheClosetBasics-kurtas&kurtis-starting499.jpg" alt="" style="padding: 0; width: 506px;" ></div>
+             <div class="col" style="margin: 0;padding: 0;"><img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-BagTheClosetBasics-tshirts-starting199.jpg" alt="" style="padding: 0; width: 506px;" ></div>
+             <div class="col" style="margin: 0;padding: 0;"><img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-BagTheClosetBasics-jeans-starting799.jpg" alt="" style="padding: 0; width: 506px;" ></div>
+             <div class="col" style="margin: 0;padding: 0;"><img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-BagTheClosetBasics-dresses-starting499.jpg" alt="" style="padding: 0; width: 506px;" ></div>
+             <div class="col" style="margin: 0;padding: 0;"><img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-BagTheClosetBasics-trousers-starting699.jpg" alt="" style="padding: 0; width: 506px;" ></div>
+             <div class="col" style="margin: 0;padding: 0;"><img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-BagTheClosetBasics-shirts-starting599.jpg" alt="" style="padding: 0; width: 506px;" ></div>
+             <div class="col" style="margin: 0;padding: 0;"><img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-BagTheClosetBasics-kurtasets-starting999.jpg" alt="" style="padding: 0; width: 506px;" ></div>
+             <div class="col" style="margin: 0;padding: 0;"><img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-BagTheClosetBasics-tops-starting199.jpg" alt="" style="padding: 0; width: 506px;" ></div>
+             <div class="col" style="margin: 0;padding: 0;"><img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-BagTheClosetBasics-salwars&churidars-starting299.jpg" alt="" style="padding: 0; width: 506px;" ></div>
+             <div class="col" style="margin: 0;padding: 0;"><img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-BagTheClosetBasics-girlstopsdresses-starting299.jpg" alt="" style="padding: 0; width: 506px;" ></div>
+             <div class="col" style="margin: 0;padding: 0;"><img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-BagTheClosetBasics-boysteesshirts-starting249.jpg" alt="" style="padding: 0; width: 506px;" ></div>
+             <div class="col" style="margin: 0;padding: 0;"><img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-BagTheClosetBasics-newdrops-under599.jpg" alt="" style="padding: 0; width: 506px;" ></div>
+             
+            </div> 
+            
+            <img src="https://assets.ajio.com/cms/TRENDS/WEB/D-19072024-TrendsSIS-bottomstrip-clearancesale.jpg" alt="" width="100%">
+            <img src="https://assets.ajio.com/cms/TRENDS/WEB/08032022-D-unisex-ajiocares-strip11.jpg" alt=""width="100%">
+            <img src="im3.jpg" alt=""width="100%">
+             
+             
+
+          
+
+
+            
+      </div>
+      </div>
+
+
+
+
+      <footer class="text-center text-lg-start" style="background-color:rgb(34, 58, 80) ;color: white;">
+        <!-- Grid container -->
+        <div class="container p-5">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h6 class="text">Ajio</h6>
+      
+              <ul class="list-unstyled mb-0" >
+                <li>
+                  <a href="#!" class="text" style="color: white;">Who We Are</a>
+                </li>
+                <li>
+                  <a href="#!" class="text"style="color: white;">Join Our Team</a>
+                </li>
+                <li>
+                  <a href="#!" class="text"style="color: white;">Terms & Condition</a>
+                </li>
+                <li>
+                  <a href="#!" class="text"style="color: white;">We Respect Your Privacy</a>
+                </li>
+                <li>
+                  <a href="#!" class="text"style="color: white;">Fees & Payments</a>
+                </li>
+                <li>
+                  <a href="#!" class="text"style="color: white;">Refund & Refund Policy</a>
+                </li>
+              
+                <li>
+                  <a href="#!" class="text"style="color: white;">Promotions Terms & Contitions</a>
+                </li>
+              
+              
+              
+              </ul>
+            </div>
+            <!--Grid column-->
+      
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h6 class="text mb-0">Helps</h6>
+      
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text"style="color: white;">Track Our Order</a>
+                </li>
+                <li>
+                  <a href="#!" class="text"style="color: white;">FAQs</a>
+                </li>
+                <li>
+                  <a href="#!" class="text"style="color: white;">Returns</a>
+                </li>
+                <li>
+                  <a href="#!" class="text"style="color: white;">Cancellations</a>
+                </li>
+                <li>
+                  <a href="#!" class="text"style="color: white;">Payments</a>
+                </li>
+                <li>
+                  <a href="#!" class="text"style="color: white;">Customer Service</a>
+                </li>
+                <li>
+                  <a href="#!" class="text"style="color: white;">How Do I Reeedm My Coupon?</a>
+                </li>
+              
+              </ul>
+            </div>
+            <!--Grid column-->
+      
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h6 class="text">Shop by</h6>
+      
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text"style="color: white;">Men</a>
+                </li>
+                <li>
+                  <a href="#!" class="text"style="color: white;">Women</a>
+                </li>
+                <li>
+                  <a href="#!" class="text"style="color: white;">Kids</a>
+                </li>
+                
+                <li>
+                  <a href="#!" class="text"style="color: white;">Indie</a>
+                </li>
+                <li>
+                  <a href="#!" class="text"style="color: white;">Stores</a>
+                </li>
+                <li>
+                  <a href="#!" class="text"style="color: white;">New Arrivals</a>
+                </li>
+                <li>
+                  <a href="#!" class="text"style="color: white;">Brand Directory</a>
+                </li>
+                <li>
+                  <a href="#!" class="text"style="color: white;">Home</a>
+                </li>
+                <li>
+                  <a href="#!" class="text"style="color: white;">Collections</a>
+                </li>
+                </ul>
+            </div>
+            <!--Grid column-->
+      
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h6 class="text mb-0">Follow us</h6>
+      
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!" class="text"style="color: white;">Facebook</a>
+                </li>
+                <li>
+                  <a href="#!" class="text"style="color: white;">Instagram</a>
+                </li>
+                <li>
+                  <a href="#!" class="text"style="color: white;">Twitter</a>
+                </li>
+                <li>
+                  <a href="#!" class="text"style="color: white;">Pinterest</a>
+                </li>
+              </ul>
+
+              
+            </div>
+            
+           
+            <!--Grid column-->
+          </div> <br><br>
+          <hr style="color: white;">
+          <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+      
+        <div class="f1">
+          <div>
+            <h6>Payment Methods</h6>
+          </div>
+          <div>
+            <h6>Secure Systems</h6>
+          </div>
+        </div>
+        <div class="f2">
+          <div>
+            <img src="im1.jpg" alt="" style="width: 500px;">
+          </div>
+          <div>
+            <h6><img src="im2.jpg" alt="" style="width: 100px;height: 50px;"></h6>
+          </div>
+        </div>
+      
+
+      </footer>
+
+
+      </body>
+
+</html>

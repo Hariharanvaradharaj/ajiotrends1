@@ -1,0 +1,145 @@
+.sign1 ul li a{
+    color: black;
+}
+
+.sign1 ul li a{
+    text-decoration: none;
+}
+
+
+.sign1 ul li a:hover{
+    text-decoration:underline;
+}
+
+
+.list{
+    background-color: rgb(63, 59, 59);
+}
+
+
+.list .list1 {
+    display:inline;
+    align-items: center;
+    text-align: center;
+    justify-content:space-between;
+    
+    
+}
+.list .img{
+    padding-top: 14px;
+text-align: center;
+align-items: center;
+justify-content: center;
+}
+
+.list1 ul li {
+    display: inline;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px;
+    margin: 5px;
+    color: white;
+}
+.list1 ul{
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+
+.img1 img {
+    margin-top: 0px;
+}
+
+
+.n2 button{
+    position: absolute;
+    margin-top: 40px;
+    height: 50px;
+    width: 60px;
+    list-style: none;
+}
+.n1 .n2{
+    list-style: none;
+}
+
+
+.n2{
+    height: 150px;
+    width: 200px;
+    position: absolute;
+    background-color: rgb(229, 237, 234);
+}
+
+.btngroup:hover .dropdown-menu{
+    display: block;
+}
+
+.dropdown-menu{
+    margin-left: -200px;
+    margin-top: 10px;
+    height: 130px;
+    width: 250px;
+
+}
+
+.dropdown-menu li button{
+    margin-top: 10px;
+    margin-left: 52px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: burlywood;
+    border: 1px solid burlywood;
+}
+
+.dropdown-menu p{
+    margin-top: 15px;
+    text-align: center;
+    color: rgb(73, 95, 95);
+}
+.dropdown-menu h6{
+    padding: 40px;
+    padding-top: 5px;
+    padding-bottom: 0;
+    text-align: center;
+    color: rgb(73, 95, 95);
+}
+
+.center img:hover{
+   transform: scale(1.01);
+   
+}
+
+footer ul li a{
+    font-size: x-small;
+    color: silver;
+}
+
+footer ul li a{
+    text-decoration: none;
+}
+
+footer ul li a:hover{
+
+text-decoration: underline;
+}
+
+.row{
+    margin-left: 20px;
+}
+
+.f1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -20px;
+    padding-left: 145px;
+    padding-right: 145px;
+}
+.f2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-left: 145px;
+    padding-right: 145px;
+}
